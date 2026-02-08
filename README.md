@@ -127,7 +127,7 @@ For research and debugging:
 - [Orchestration](#orchestration) - Automation and deployment
 - [Lab & Testbeds](#lab--testbeds) - Ready-to-use environments
 - [Testing](#testing) - TTCN-3, load testing, validation
-- [Security](#security) - Research, tools, and talks
+- [Security](#security) - Research, tools, IMSI catcher detection, and talks
 - [Learning Resources](#learning-resources) - Blogs, docs, tutorials
 - [Community](#community) - Forums, mailing lists, Discord, Slack
 - [Commercial](#commercial) - Companies and commercial offerings
@@ -230,6 +230,7 @@ For research and debugging:
 - [PacketRusher](https://github.com/HewlettPackard/PacketRusher) `[2025-12]` - High performance 5G UE/gNB Simulator and CP/UP load tester. PacketRusher is an open-source tool dedicated to the performance testing and automatic validation of 5G Core Networks using simulated UE (user equipment) and gNodeB (5G base station). From Valentin D'Emmanuele - France.
 - [py3gpp](https://github.com/catkira/py3gpp) `[2024-11]` - A Python package for 5G-NR simulations.
 - [RFSwift](https://github.com/PentHertz/RF-Swift) `[2026-01]` -  powerful multi-platform RF toolbox that deploys specialized radio tools in seconds on Linux, Windows, and macOS. Provdes telecom_4G_5GNSA_* family of telecoms tools.
+- [NVIDIA Aerial](https://github.com/NVIDIA/aerial-cuda-accelerated-ran) `[2025-12]` - SDK for building commercial-grade, AI-native, 3GPP and O-RAN compliant 5G/6G gNB software on NVIDIA GPU-accelerated platforms.
 
 ### 4G
 
@@ -265,6 +266,8 @@ For research and debugging:
 - [LimeSDR](https://limemicro.com/products/boards/limesdr/) - Affordable full-duplex SDR board, popular for srsRAN and OAI experimentation.
 - [BladeRF](https://www.nuand.com/) - USB 3.0 SDR platform compatible with open source cellular stacks.
 - [Kalibrate](https://github.com/steve-m/kalibrate-rtl) `[2023-08]` - Kalibrate, or kal, can scan for GSM base stations in a given frequency band and can use those GSM base stations to calculate the local oscillator frequency offset.
+- [rtl-sdr](https://github.com/osmocom/rtl-sdr) `[2026-01]` - Library for turning a RTL2832-based DVB dongle into a Software Defined Receiver. Foundational for low-cost SDR-based cellular signal reception.
+- ⚠️ [open5G_phy](https://github.com/catkira/open5G_phy) `[2025-04]` - A resource-efficient, customizable, synthesizable 5G NR lower PHY written in Verilog for FPGA targets.
 
 
 ## Core Network
@@ -291,6 +294,7 @@ For research and debugging:
 - [Magma](https://github.com/magma/magma) `[2026-01]` - Rearchitected core network with access gateway (MME+P/SGW), federation gateway for auth (S6a) and billing (Gx, Gy). Initiated by FB on a the OAI EPC code base.
 - ⚠️ [5GCoreNetSDK](https://github.com/5GCoreNet/5GCoreNetSDK) `[2023-06]` - 5GCoreNetSDK is a fully-featured Golang SDK for developing inside 5GC (Release-18).
 - [eupf](https://github.com/edgecomllc/eupf) `[2026-02]` - Open Source UPF built on eBPF.
+- [UPG-VPP](https://github.com/travelping/upg-vpp) `[2026-02]` - High-performance User Plane Gateway (UPG) based on FD.io VPP from Travelping.
 - [qcore](https://github.com/nplrkn/qcore) `[2026-01]` - The world's most lightweight 5G Core (probably)
 
 ### 4G
@@ -337,6 +341,10 @@ For research and debugging:
 - [IMS Clearwater](http://www.projectclearwater.org) - Clearwater is an open source implementation of IMS (the IP Multimedia Subsystem).
 - [Kamailio](https://www.kamailio.org) - SIP stack used for VoLTE and SBC.
 - [go-eventsocket](https://github.com/fiorix/go-eventsocket) `[2024-09]` - FreeSWITCH Event Socket library for the Go programming language.
+- [Asterisk](https://github.com/asterisk/asterisk) `[2026-02]` - The most widely deployed open-source PBX and telephony engine. SIP, PJSIP, WebRTC, conferencing, and IVR.
+- [PJSIP](https://github.com/pjsip/pjproject) `[2026-02]` - Free and open-source multimedia communication library implementing SIP, SDP, RTP, STUN, TURN, and ICE. Foundation for many VoIP/IMS clients.
+- [HOMER](https://github.com/sipcapture/homer) `[2026-01]` - 100% Open-Source SIP/VoIP/RTC packet capture and monitoring platform. Essential for VoLTE/VoWiFi troubleshooting.
+- [Routr](https://github.com/fonoster/routr) `[2026-02]` - A programmable, cloud-native SIP server for building modern telephony systems.
 
 ### SS7
 
@@ -485,6 +493,7 @@ Resources
 - [TTCN3vscode](https://github.com/nokia/vscode-ttcn3) `[2026-01]` - TTCN-3 vs code plugin
 - [ixia-c](https://github.com/open-traffic-generator/ixia-c) `[2026-01]` - Ixia-c is a modern, powerful and API-driven traffic generator designed to cater to the needs of hyperscalers, network hardware vendors and hobbyists alike.
 - [Telcometer](https://github.com/itsMohammadHeidari/Telcometer) `[2024-10]` - Diameter Credit-Control Application Load Testing script powered by [Grafana K6](https://github.com/grafana/k6)
+- [Sionna](https://github.com/NVlabs/sionna) `[2025-12]` - GPU-accelerated open-source library from NVIDIA for link-level simulation of communication systems. Covers OFDM, MIMO, LDPC, Polar codes, and ray tracing for 5G/6G research.
 - [Simu5G](https://simu5g.org/) - OMNeT++ based 5G network simulator for end-to-end performance evaluation.
 - [ns-3 LTE/NR](https://www.nsnam.org/) - Discrete-event network simulator with LTE and 5G NR modules.
 - [Wireshark](https://www.wireshark.org/) - Essential protocol analyzer with dissectors for GSMTAP, Diameter, GTP, S1AP, NGAP, and more.
@@ -496,6 +505,15 @@ Resources
 - [SigPloit](https://github.com/SigPloiter/SigPloit) `[2019-12]` - Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP.
 - [5GC_API_parse](https://github.com/PentHertz/5GC_API_parse) `[2021-07]` - 5GC API parse is a BurpSuite extension allowing to assess 5G core network functions, by parsing the OpenAPI 3.0 not supported by previous OpenAPI extension in Burp, and generating requests for intrusion tests purposes.
 - [FirmWire](https://github.com/FirmWire/FirmWire) `[2026-01]` - FirmWire is a full-system baseband firmware emulation platform for fuzzing, debugging, and root-cause analysis of smartphone baseband firmwares.
+- [5Ghoul](https://github.com/asset-group/5ghoul-5g-nr-attacks) `[2025-11]` - 5G NR attack and fuzzing framework targeting Qualcomm and MediaTek 5G baseband implementations.
+- [hexagon_fuzz](https://github.com/srlabs/hexagon_fuzz) `[2025-10]` - A fuzzing framework for Qualcomm Hexagon baseband firmware using QEMU system emulation, from SRLabs.
+- [SIPVicious](https://github.com/EnableSecurity/sipvicious) `[2026-01]` - SIP/VoIP security testing toolset for auditing SIP-based VoIP systems.
+
+### IMSI Catcher Detection
+
+- [Rayhunter](https://github.com/EFForg/rayhunter) `[2026-02]` - Rust tool to detect cell site simulators (IMSI catchers) on an Orbic mobile hotspot, from the EFF.
+- [IMSI-catcher](https://github.com/Oros42/IMSI-catcher) `[2025-12]` - Python tool using gr-gsm to display IMSI numbers of cellphones around you.
+- [Android-IMSI-Catcher-Detector](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector) `[2026-01]` - Android app to detect IMSI catchers, StingRays, and silent SMS.
 
 ### Security Research & Reports
 
