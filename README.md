@@ -217,6 +217,7 @@ For research and debugging:
 
 - [O-RAN Software and seed code](https://o-ran-sc.org) - The O-RAN Software Community (SC) is a collaboration between the O-RAN Alliance and Linux Foundation with the mission to support the creation of software for the Radio Access Network (RAN). Introduction to O-RAN in a [LF video](https://www.youtube.com/watch?v=iJyb0pCWDKo).
 - [srsRAN O-RAN SC RIC](https://github.com/srsran/oran-sc-ric) `[2025-10]` - Simplified O-RAN SC RIC deployment with improved usability and xApp examples, from the srsRAN team.
+- [FlexRIC](https://gitlab.eurecom.fr/mosaic5g/flexric) - O-RAN Alliance compliant Near-RT RIC and E2 Agent with xApp SDK in C/C++ and Python. Sub-200µs latency. Part of MOSAIC5G/OAI. Hosted on **GitLab (Eurecom)**.
 
 ### 5G
 
@@ -242,7 +243,7 @@ For research and debugging:
 - [OAI eNB/ gNB](https://gitlab.eurecom.fr/oai/openairinterface5g/wikis/home) `[2026-02]` - Open Air Interface RAN 4G eNB / 5G NR gNB to use on SDR-based radios.
 - [srsLTE](https://github.com/srsran/srsRAN_4G) `[2026-01]` - srsLTE eNB 4G to use on SDR-based radios.
 - ⚠️ [LTE-ciphercheck](https://github.com/mrlnc/LTE-ciphercheck) `[2022-09]` - srsLTE derivative to check for cipher configuration of an LTE network - test across the 256 possibilities using an SDR radio.
-- ⚠️ [OpenLTE](http://openlte.sourceforge.net) - OpenLTE is an open source implementation of the 3GPP LTE specifications from Ben Wojtowicz. _Last updated 2021._
+- ⚠️ [OpenLTE](https://sourceforge.net/projects/openlte/) - OpenLTE is an open source implementation of the 3GPP LTE specifications from Ben Wojtowicz. GNU Radio applications for LTE downlink/uplink with RTL-SDR, HackRF, USRP. Hosted on **SourceForge**. _Last updated 2021._
 - [Cisco 4G nFAPI](https://github.com/cisco/open-nFAPI) `[2018-08]` - Open-nFAPI is implementation of the Small Cell Forum's network functional API or nFAPI for short. nFAPI defines a network protocol that is used to connect a Physical Network Function (PNF) running LTE Layer 1 to a Virtual Network Function (VNF) running LTE layer 2 and above.
 - [CrocodileHunter](https://github.com/EFForg/crocodilehunter) `[2023-02]` - Crocodile Hunter is a tool to hunt fake eNodeBs, also known commonly as hailstorm, stingray, cell site simulators, or IMSI catchers. It works by listening for broadcast messages from all of the 4G stations in the area, inferring their location, and looking for unusual activity. From the EFF.
 - [eNB s1 emulator](https://github.com/fasferraz/eNB) `[2026-01]` - This is an eNB emulator application done in python3 to interact with MME (S1AP) and SGW (S1-U). This application can be used to perform and simulate several EMM and ESM procedures, including user plane traffic. This application was tested with real MMEs (lab environment).
@@ -273,6 +274,8 @@ For research and debugging:
 - [Kalibrate](https://github.com/steve-m/kalibrate-rtl) `[2023-08]` - Kalibrate, or kal, can scan for GSM base stations in a given frequency band and can use those GSM base stations to calculate the local oscillator frequency offset.
 - [rtl-sdr](https://github.com/osmocom/rtl-sdr) `[2026-01]` - Library for turning a RTL2832-based DVB dongle into a Software Defined Receiver. Foundational for low-cost SDR-based cellular signal reception.
 - ⚠️ [open5G_phy](https://github.com/catkira/open5G_phy) `[2025-04]` - A resource-efficient, customizable, synthesizable 5G NR lower PHY written in Verilog for FPGA targets.
+- [DragonOS](https://sourceforge.net/projects/dragonos-focal/) - Debian/Ubuntu-based Linux distro with 30+ pre-installed SDR tools (GNU Radio, gr-gsm, GQRX, etc.) for RF analysis, spectrum monitoring and telecom security. Hosted on **SourceForge**.
+- [Gqrx SDR](https://www.gqrx.dk/) - Open source SDR receiver powered by GNU Radio, supporting RTL-SDR, HackRF, LimeSDR, USRP and more. [SourceForge](https://sourceforge.net/projects/gqrx/).
 
 
 ## Core Network
@@ -336,7 +339,11 @@ For research and debugging:
 ### OSS/BSS
 
 - [Sigscale OCS](https://github.com/sigscale/ocs) `[2026-01]` - SigScale OCS includes a 3GPP AAA server function for authentication, authorization and accounting (AAA) of subscribers using DIAMETER or RADIUS protocols.
-- [Bodastage CE](http://www.bodastage.org) - Boda Telecom Suite - Community Edition (BTS-CE) is an open source telecommunication network management platform for various RAN providers. [github](https://github.com/bodastage/bts-ce)
+- [Bodastage CE](https://gitlab.com/bts-ce/bts-ce) - Boda Telecom Suite - Community Edition (BTS-CE) is an open source vendor-agnostic telecommunication network management platform. Hosted on **GitLab**.
+- [CGRateS](https://github.com/cgrates/cgrates) - Real-time Charging System for Telecom & ISP environments. Cloud-ready micro-services with CDR mediation, LCR, fraud detection and multi-tenant support.
+- [BillRun](https://github.com/BillRun/system) - Open source Telecom BSS: CDR mediation, real-time OCS, rating/charging (prepaid, postpaid, roaming, wholesale), and fraud detection.
+- [OpenCDRRate](https://sourceforge.net/p/opencdrrate/home/Home/) - Scalable CDR rating, taxation and invoicing system for telecom/VoIP. Hosted on **SourceForge**.
+- [jBilling](https://sourceforge.net/projects/jbilling/) - Open source enterprise billing system in Java with CDR mediation module for telecom. Hosted on **SourceForge**.
 
 ## Interconnect
 
@@ -350,6 +357,11 @@ For research and debugging:
 - [PJSIP](https://github.com/pjsip/pjproject) `[2026-02]` - Free and open-source multimedia communication library implementing SIP, SDP, RTP, STUN, TURN, and ICE. Foundation for many VoIP/IMS clients.
 - [HOMER](https://github.com/sipcapture/homer) `[2026-01]` - 100% Open-Source SIP/VoIP/RTC packet capture and monitoring platform. Essential for VoLTE/VoWiFi troubleshooting.
 - [Routr](https://github.com/fonoster/routr) `[2026-02]` - A programmable, cloud-native SIP server for building modern telephony systems.
+- [OpenSIPS](https://opensips.org/) - GPL multi-functional SIP server: proxy, registrar, load balancer, SBC, NAT traversal. Former OpenSER. [SourceForge (legacy)](https://sourceforge.net/projects/opensips/) / [GitHub](https://github.com/OpenSIPS/opensips).
+- [OpenIMSs](https://github.com/VoicenterTeam/openimss) - Open source environment for real-life development of IMS-based 4G/5G/NR voice/video/data/RCS services. Extends docker_open5gs.
+- [FusionPBX](https://www.fusionpbx.com/) - Multi-tenant PBX and voice switch for FreeSWITCH with IVR, call center, provisioning and more. [SourceForge](https://sourceforge.net/directory/pbx/).
+- [Sofia-SIP](https://github.com/freeswitch/sofia-sip) - Open-source SIP User-Agent library (RFC3261 compliant) maintained by FreeSWITCH. Originally from Nokia Research Center.
+- [OpalVOIP](https://sourceforge.net/projects/opalvoip/) - C++ multi-platform VoIP library supporting H.323, SIP, and IAX2. Used by Ekiga softphone. Hosted on **SourceForge**.
 
 ### SS7
 
@@ -357,14 +369,19 @@ For research and debugging:
 - [SigFW](https://github.com/P1sec/SigFW) `[2024-10]` - Open Source Signaling Firewall for SS7, Diameter filtering, antispoof and antisniff.
 - [yate](https://github.com/yatevoip/yate) `[2026-01]` - Open Source Telephony engine with support of MTP2/MTP3 over TDM, M2PA, M2UA, M3UA, SCCP, TCAP
 
-### SMPP
+### SMPP / SMS Gateways
 
 - [go-smpp](https://github.com/fiorix/go-smpp) `[2022-11]` - This is an implementation of SMPP 3.4 for Go, based on the original smpp34 from Kevin Patel.
 - [Selenium SMPPSim](http://www.seleniumsoftware.com/downloads.html) - (software disappeared) - possible mirror [here](https://github.com/haifzhan/SMPPSim).
 - [smppgui](https://github.com/ukarim/smppgui) `[2025-07]` - SMPP gui client
+- [Kannel](https://www.kannel.org/) - Compact and powerful open source WAP and SMS gateway, used globally for SMS delivery at scale. [SourceForge](https://sourceforge.net/projects/kannelrelease/).
+- [Jasmin SMS Gateway](https://github.com/jookies/jasmin) - Open source SMS gateway in Python/Twisted with SMPP and HTTP APIs, message routing/filtering, and real-time billing.
 
 ## Satellite Communication
-- [Hughes_OneWeb_Monitor](https://github.com/nickvsnetworking/Hughes_OneWeb_Monitor) `[2025-04]` - Hughes OneWeb Terminal Prometheus Exporter 
+- [Hughes_OneWeb_Monitor](https://github.com/nickvsnetworking/Hughes_OneWeb_Monitor) `[2025-04]` - Hughes OneWeb Terminal Prometheus Exporter
+- [SatNOGS](https://gitlab.com/librespacefoundation/satnogs) - Open Source Global Satellite Ground Station Network focused on LEO satellites, from the Libre Space Foundation. Hosted on **GitLab**.
+- [gr-leo](https://gitlab.com/librespacefoundation/gr-leo) - GNU Radio Out-of-Tree module simulating the telecommunication channel between orbiting satellites and ground stations, from Libre Space Foundation / ESA SDR Makerspace. Hosted on **GitLab**.
+- [GNSS-SDR](https://sourceforge.net/projects/gnss-sdr/) - Open source software-defined GNSS (Global Navigation Satellite Systems) receiver written in C++ and based on GNU Radio. Hosted on **SourceForge**.
 
 ## Protocols
 
@@ -373,6 +390,7 @@ For research and debugging:
 - [Pycrate](https://github.com/pycrate-org/pycrate) `[2025-12]` - A Python library to ease the development of encoders and decoders for various protocols and file formats, especially telecom ones. Provides an ASN.1 compiler and a CSN.1 runtime.
 - [bazel-pycrate](https://github.com/ravens/bazel-pycrate) `[2023-07]` - A bazel-based pycrate ready jupyter notebook env
 - [hampi](https://github.com/gabhijit/hampi) `[2025-08]` - The Goal of this project is to implement an ASN.1 Compiler in Rust which can generate Rust bindings for different ASN.1 specifications.
+- [Eclipse Titan TTCN-3 (core)](https://gitlab.eclipse.org/eclipse/titan/titan.core/) - Open source TTCN-3 compiler and runtime from Ericsson/Eclipse, with built-in ASN.1 BER/PER/XML codecs. Used for telecom protocol conformance testing. Hosted on **GitLab (Eclipse)**.
 
 ### NAS 4G/5G and Milenage
 
@@ -392,6 +410,8 @@ For research and debugging:
 - [gtpv2](https://github.com/blorticus/gtpv2) `[2021-09]` - GPRS Tunneling Protocol Library for golang.
 - [scapy-gtp](https://github.com/secdev/scapy/blob/master/scapy/contrib/gtp.py) `[2026-01]` - Scapy (A interactive packet manipulation program) GTP layer. Spec: 3GPP TS 29.060 and 3GPP TS 29.274. Some IEs: 3GPP TS 24.008.
 - [gtp_dialer](https://github.com/fasferraz/gtp_dialer) `[2025-11]` - GTPv1/GTPv2 Dialer
+- [nwGTPv2](https://sourceforge.net/projects/nwgtpv2/) - Free and open source implementation of eGTP (GTPv2) control plane, supporting S11, S5, S8 EPC interfaces. Also provides nwEPC SAE-Gateway framework. Hosted on **SourceForge**.
+- [OpenGGSN](https://sourceforge.net/projects/ggsn/) - Open source Gateway GPRS Support Node (GGSN) with SGSN emulator for core network testing. Maintained within Osmocom. Hosted on **SourceForge**.
 
 ### SCTP
 
@@ -415,6 +435,8 @@ For research and debugging:
 - [jdiameter](https://github.com/RestComm/jdiameter/) `[2024-01]` - RestComm jDiameter provides an Open Source Java implementation of the Diameter standard for Authentication, Authorization, and Accounting (AAA).
 - ⚠️ [diafuzzer](https://github.com/Orange-OpenSource/diafuzzer) `[2019-10]` - Diameter fuzzer, based on specifications of Diameter applications following rfc 3588 / 6733 from Orange.
 - [bromelia](https://github.com/heimiricmr/bromelia) `[2024-05]` - A Python micro framework for building Diameter protocol applications.
+- [freeDiameter](http://www.freediameter.net/) - Open source implementation of the Diameter protocol (RFC 6733). Extensible platform for AAA with modular architecture. Also available on [GitLab (Eurecom)](https://gitlab.eurecom.fr/oai/freediameter).
+- [Open Diameter](https://sourceforge.net/projects/diameter/) - Open source C++ implementation of the Diameter protocol, licensed under GPLv2/LGPLv2. Hosted on **SourceForge**.
 
 ### SS7/SIGTRAN
 
@@ -423,6 +445,9 @@ For research and debugging:
 - [libosmo-sccp](https://git.osmocom.org/libosmo-sccp/) - SCCP Library
 - [go-tcap](https://github.com/wmnsk/go-tcap) `[2026-01]` - Package tcap provides simple and painless handling of TCAP(Transaction Capabilities Application Part) in SS7/SIGTRAN protocol stack.
 - [openss7](http://www.openss7.org/) - An opensource development project (called OpenSS7) to provide a robust and GPL'ed SS7, SIGTRAN, ISDN and VoIP stack for Linux and other UN*X operating systems.
+- [Extended jSS7](https://github.com/PAiC-team/Extended-jSS7) - Extended Java SS7 stack with MTP2/MTP3, ISUP, SCCP, TCAP, CAMEL (Phase I-IV) and MAP. Supports SIGTRAN (SCTP/M3UA) over IP.
+- [signerl](https://gitea.osmocom.org/erlang/signerl/) - Erlang SS7 TCAP/MAP implementation. Originally from Motivity, continued within the Osmocom project. Hosted on **Osmocom Gitea**.
+- [SigScale TCAP](https://github.com/sigscale/tcap) - SS7 Transaction Capabilities Application Part (TCAP) protocol stack in Erlang, used by MAP and CAP applications in mobile operator networks.
 
 ### Dataplane acceleration
 
@@ -443,6 +468,7 @@ For research and debugging:
 - [4g-speed](https://github.com/jake-cryptic/4g-speed) `[2021-10]` - 4G Theoretical Speed Calculator | FDD & TDD Support
 - [MCC_MNC](https://github.com/P1sec/MCC_MNC) `[2024-07]` - Accurate MCC/MNC data as JSON and Python dicts, providing MNO public information. From P1 Security.
 - [OpenAPI-Dissector](https://github.com/telekom/OpenAPI-Dissector) `[2025-10]` - Experimental Wireshark dissector generator from OpenAPI specs, useful for 5G SBI protocol analysis. From Deutsche Telekom.
+- [RTPproxy](https://github.com/sippy/rtpproxy) - High-performance RTP stream proxy, works with OpenSIPS, Kamailio, and Sippy B2BUA for VoIP/VoLTE media relay.
 
 Resources
 
@@ -474,6 +500,8 @@ Resources
 ## Orchestration
 
 - [5g-sharp-orchestrator](https://github.com/Ethon-Shield/5g-sharp-orchestrator) `[2025-04]` - tool that serves as a comprehensive wrapper for configuring, deploying and monitoring 5G open-source network components, simplifying the orchestration process.
+- [ETSI Open Source MANO (OSM)](https://osm.etsi.org/) - ETSI-hosted NFV Management and Orchestration (MANO) stack for multi-cloud Telco orchestration, with network slicing support (eMBB, URLLC, mMTC).
+- [Open Baton](https://openbaton.github.io/) - ETSI NFV MANO compliant framework with TOSCA support and network slicing via SDN.
 
 ## Lab & Testbeds
 
@@ -506,8 +534,11 @@ Resources
 - [Telcometer](https://github.com/itsMohammadHeidari/Telcometer) `[2024-10]` - Diameter Credit-Control Application Load Testing script powered by [Grafana K6](https://github.com/grafana/k6)
 - [Sionna](https://github.com/NVlabs/sionna) `[2025-12]` - GPU-accelerated open-source library from NVIDIA for link-level simulation of communication systems. Covers OFDM, MIMO, LDPC, Polar codes, and ray tracing for 5G/6G research.
 - [Simu5G](https://simu5g.org/) - OMNeT++ based 5G network simulator for end-to-end performance evaluation.
-- [ns-3 LTE/NR](https://www.nsnam.org/) - Discrete-event network simulator with LTE and 5G NR modules.
-- [Wireshark](https://www.wireshark.org/) - Essential protocol analyzer with dissectors for GSMTAP, Diameter, GTP, S1AP, NGAP, and more.
+- [ns-3 LTE/NR](https://gitlab.com/nsnam/ns-3-dev) - Discrete-event network simulator with LTE and 5G NR modules. Main development on **GitLab**.
+- [5G-LENA](https://gitlab.com/cttc-lena/nr) `[2026-01]` - ns-3 NR module for 5G New Radio simulation (PHY/MAC/OFDMA, MIMO, NR-U, NR V2X). From CTTC OpenSim. [NR-U extension](https://gitlab.com/cttc-lena/nr-u). Hosted on **GitLab**.
+- [Wireshark](https://gitlab.com/wireshark/wireshark) - Essential protocol analyzer with dissectors for GSMTAP, Diameter, GTP, S1AP, NGAP, SS7/TCAP and more. Main development on **GitLab**.
+- [Seagull](https://gull.sourceforge.net/) - Multi-protocol traffic generator for IMS testing: Diameter (RFC3588) over TCP/SCTP, TCAP (over SS7/Sigtran), XCAP, Radius. From HP. [SourceForge](https://sourceforge.net/projects/gull/).
+- [ETSI Forge Test Suites](https://forge.etsi.org/rep/explore/projects) - Official ETSI test suites in TTCN-3 and Robot Framework for telecom protocols (Diameter, GTP, S1AP, NAS, MEC, NFV). Hosted on **ETSI Forge (GitLab)**.
 
 ## Security
 
@@ -602,6 +633,8 @@ Key organizations driving open source telecom development:
 - [Telecom Infra Project](https://www.telecominfraproject.com) - Facebook-initiated project, the OpenCompute of telecom.
 - [3GPP Forge](https://forge.3gpp.org/rep/explore) - Official code forge for the 3GPP organization.
 - [O-RAN Alliance](https://www.o-ran.org/) - Open Radio Access Network standards.
+- [ETSI Forge](https://forge.etsi.org/) - Official ETSI code forge hosting test suites, APIs and reference implementations for telecom standards (NFV, MEC, TTCN-3). Hosted on **GitLab**.
+- [Libre Space Foundation](https://libre.space/) - Non-profit for open source hardware and software in space, including SatNOGS ground station network and UPSat satellite.
 
 ## Community
 
