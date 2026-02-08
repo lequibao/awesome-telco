@@ -163,6 +163,8 @@ For research and debugging:
 - [Generic-eUICC-Test-Profile](https://github.com/GSMATerminals/Generic-eUICC-Test-Profile-for-Device-Testing-Public) `[2025-06]` - Standardized test profiles for embedded UICCs.
 - [ISD-R Access Provider](https://github.com/cheeriotb/ISD-R-AccessProvider) `[2021-01]` - Content provider for communicating with ISD-R in soldered eSIM on Android (Pixel4).
 - [rlpa-server](https://github.com/estkme-group/rlpa-server) `[2024-07]` - Remote LPA Server for eSIM profile management, from the lpac team.
+- [MiniLPA](https://github.com/EsimMoe/MiniLPA) `[2024-12]` - Professional cross-platform LPA UI for eSIM/eUICC management (GSMA SGP.22), built with Java Swing.
+- [NekokoLPA](https://github.com/iebb/NekokoLPA) `[2026-01]` - Open-source LPA software for managing eSIM profiles on Android and iOS.
 
 ### SIM Emulation & Virtualization
 
@@ -218,6 +220,7 @@ For research and debugging:
 - [O-RAN Software and seed code](https://o-ran-sc.org) - The O-RAN Software Community (SC) is a collaboration between the O-RAN Alliance and Linux Foundation with the mission to support the creation of software for the Radio Access Network (RAN). Introduction to O-RAN in a [LF video](https://www.youtube.com/watch?v=iJyb0pCWDKo).
 - [srsRAN O-RAN SC RIC](https://github.com/srsran/oran-sc-ric) `[2025-10]` - Simplified O-RAN SC RIC deployment with improved usability and xApp examples, from the srsRAN team.
 - [FlexRIC](https://gitlab.eurecom.fr/mosaic5g/flexric) - O-RAN Alliance compliant Near-RT RIC and E2 Agent with xApp SDK in C/C++ and Python. Sub-200µs latency. Part of MOSAIC5G/OAI. Hosted on **GitLab (Eurecom)**.
+- [ProtO-RU](https://github.com/NUS-CIR/ProtO-RU) `[2025-12]` - Software implementation of an O-RAN split-7.2 compatible Radio Unit using SDRs. From NUS.
 
 ### 5G
 
@@ -237,6 +240,7 @@ For research and debugging:
 - [NVIDIA Aerial](https://github.com/NVIDIA/aerial-cuda-accelerated-ran) `[2025-12]` - SDK for building commercial-grade, AI-native, 3GPP and O-RAN compliant 5G/6G gNB software on NVIDIA GPU-accelerated platforms.
 - [alsoran](https://github.com/nplrkn/alsoran) `[2025-06]` - 5G gNodeB Centralized Unit (gNB-CU) written in Rust. From the author of qcore.
 - [gnbsim (SD-Core)](https://github.com/omec-project/gnbsim) `[2026-02]` - gNB and UE simulator for testing 5G core networks, from the SD-Core/OMEC project.
+- [free-ran-ue](https://github.com/free-ran-ue/free-ran-ue) `[2026-02]` - Next-generation open-source 5G RAN/UE simulator for free5GC with web frontend, multi-UE and ULCL support. Written in Go.
 
 ### 4G
 
@@ -274,6 +278,7 @@ For research and debugging:
 - [Kalibrate](https://github.com/steve-m/kalibrate-rtl) `[2023-08]` - Kalibrate, or kal, can scan for GSM base stations in a given frequency band and can use those GSM base stations to calculate the local oscillator frequency offset.
 - [rtl-sdr](https://github.com/osmocom/rtl-sdr) `[2026-01]` - Library for turning a RTL2832-based DVB dongle into a Software Defined Receiver. Foundational for low-cost SDR-based cellular signal reception.
 - ⚠️ [open5G_phy](https://github.com/catkira/open5G_phy) `[2025-04]` - A resource-efficient, customizable, synthesizable 5G NR lower PHY written in Verilog for FPGA targets.
+- [neural_rx](https://github.com/NVlabs/neural_rx) `[2025-12]` - Real-time inference of 5G NR multi-user MIMO neural receivers from NVIDIA Research.
 - [DragonOS](https://sourceforge.net/projects/dragonos-focal/) - Debian/Ubuntu-based Linux distro with 30+ pre-installed SDR tools (GNU Radio, gr-gsm, GQRX, etc.) for RF analysis, spectrum monitoring and telecom security. Hosted on **SourceForge**.
 - [Gqrx SDR](https://www.gqrx.dk/) - Open source SDR receiver powered by GNU Radio, supporting RTL-SDR, HackRF, LimeSDR, USRP and more. [SourceForge](https://sourceforge.net/projects/gqrx/).
 
@@ -304,6 +309,7 @@ For research and debugging:
 - [eupf](https://github.com/edgecomllc/eupf) `[2026-02]` - Open Source UPF built on eBPF.
 - [UPG-VPP](https://github.com/travelping/upg-vpp) `[2026-02]` - High-performance User Plane Gateway (UPG) based on FD.io VPP from Travelping.
 - [qcore](https://github.com/nplrkn/qcore) `[2026-01]` - The world's most lightweight 5G Core (probably)
+- [NEF_emulator](https://github.com/medianetlab/NEF_emulator) `[2025-02]` - Configurable emulated environment for providing 3GPP Network Exposure Function (NEF) APIs. Enables testing of network applications against 5GC exposure capabilities.
 
 ### 4G
 
@@ -502,6 +508,7 @@ Resources
 - [5g-sharp-orchestrator](https://github.com/Ethon-Shield/5g-sharp-orchestrator) `[2025-04]` - tool that serves as a comprehensive wrapper for configuring, deploying and monitoring 5G open-source network components, simplifying the orchestration process.
 - [ETSI Open Source MANO (OSM)](https://osm.etsi.org/) - ETSI-hosted NFV Management and Orchestration (MANO) stack for multi-cloud Telco orchestration, with network slicing support (eMBB, URLLC, mMTC).
 - [Open Baton](https://openbaton.github.io/) - ETSI NFV MANO compliant framework with TOSCA support and network slicing via SDN.
+- [Nephio](https://github.com/nephio-project/nephio) `[2026-02]` - Kubernetes-based automation platform for deploying and managing 5G Network Functions and underlying infrastructure. Linux Foundation project.
 
 ## Lab & Testbeds
 
@@ -514,6 +521,7 @@ Resources
 - [OpenAICellular](https://openaicellular.github.io/oaic/quickstart.html) - OAIC is an open-source effort led by a consortium of academic institutions to provide fully open-source software architecture, library, and toolset that encompass both the AI controllers (OAIC-C) as well as an AI testing framework (OAIC-T).
 - [sample configs](https://github.com/s5uishida/sample_config_misc_for_mobile_network) `[2026-01]` - Sample Configurations and Miscellaneous for Mobile Network.
 - [free5gc-compose](https://github.com/free5gc/free5gc-compose) `[2026-02]` - Docker Compose files for deploying the full free5GC 5G core stack.
+- [docker-open5gs (Borjis131)](https://github.com/Borjis131/docker-open5gs) `[2025-11]` - Open5GS 5G Core container images with Docker Compose deployments and Helm charts for Kubernetes.
 
 ### Remote control
 
@@ -555,6 +563,7 @@ Resources
 - [BaseSpec](https://github.com/SysSec-KAIST/BaseSpec) `[2021-03]` - Comparing cellular L3 protocol messages between 3GPP spec documents and baseband firmware implementations. From the LTESniffer team at KAIST.
 - [DoLTEst](https://github.com/SysSec-KAIST/DoLTEst) `[2022-08]` - Negative testing framework for finding non-standard-compliant bugs in LTE protocol implementations of UEs. From KAIST.
 - [blue-merle](https://github.com/srlabs/blue-merle) `[2025-06]` - Enhances anonymity and reduces forensic traceability of 4G mobile Wi-Fi routers (IMEI change, MAC randomization). From SRLabs.
+- [5GC_API_Pentest](https://github.com/PentHertz/5GC_API_Pentest) `[2025-12]` - Burp Suite extension for 5G Core SBI security testing with automated NF discovery, IMSI enumeration, OAuth2 workflows, and OpenAPI fuzzing. Successor to 5GC_API_parse. From PentHertz.
 
 ### IMSI Catcher Detection
 
